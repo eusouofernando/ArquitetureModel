@@ -1,0 +1,44 @@
+﻿@model Sita.ParcelDelivery.Domain.Entities.Container
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="table-responsive">
+
+   
+    
+
+
+    <table class="table table-bordered table-condensed table-striped table-hover sortable">
+        @if (Model.Parcels is null )
+        {
+            <tr>
+                <td colspan="10">No Record's found.</td>
+            </tr>
+        }
+        else
+        {
+            <thead>
+                <tr class="danger">
+                    <th data-defaultsign="_19"> Department Name</th>
+                    <th data-defaultsign="_19"> Need Insurance Sign?</th>
+                    <th data-defaultsign="AZ">Value</th>
+                    <th data-defaultsign="AZ">Weight</th>
+                   
+                </tr>
+            </thead>
+            foreach (var item in Model.Parcels)
+            {
+            <tr>
+                <td>@item.Department.Name</td>
+                <td>@item.Department.NeedInsuranceSign</td>
+                <td>@item.Value</td>
+                <td>@item.Weight</td>
+               
+            </tr>
+            }
+        }
+    </table>
+</div>
+

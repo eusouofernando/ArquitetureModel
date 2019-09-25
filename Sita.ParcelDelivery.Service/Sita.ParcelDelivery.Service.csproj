@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sita.ParcelDelivery.Data\Sita.ParcelDelivery.Data.csproj" />
+    <ProjectReference Include="..\Sita.ParcelDelivery.Domain\Sita.ParcelDelivery.Domain.csproj" />
+    <ProjectReference Include="..\Sita.ParcelDelivery.Tools\Sita.ParcelDelivery.Tools.csproj" />
+  </ItemGroup>
+
+</Project>
