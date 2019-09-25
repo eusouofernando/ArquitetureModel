@@ -10,5 +10,5 @@
 - 4) Run script in couchbase query -> CREATE PRIMARY INDEX `sitadb_index` ON `sitadb` USING GSI;
 
 - 5) Run WebProject in Visual Studio. There are two pages in the project
-  5.A) Upload Page. This page should be use to upload xml file 
-  5.B) List Parcels. Simple table to list xml data loaded by upload.
+-  5.A) Upload Page. This page should be use to upload xml file 
+-  5.B) List Parcels. Simple table to list xml data loaded by upload.
